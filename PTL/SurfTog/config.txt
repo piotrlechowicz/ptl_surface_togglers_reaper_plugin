@@ -1,2 +1,11 @@
+home
 pan
 zoom
+sends
+inserts
+automation
+fx_send
+flip
+project
+mixer
+motors

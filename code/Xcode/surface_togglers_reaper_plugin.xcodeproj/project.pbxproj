@@ -62,6 +62,7 @@
 		F72DF87126AD5B3700FF96C9 /* asyncdns.h in Headers */ = {isa = PBXBuildFile; fileRef = F72DF86C26AD5B3700FF96C9 /* asyncdns.h */; };
 		F74BAC8526B199AA00A4F12E /* surface_togglers.h in Headers */ = {isa = PBXBuildFile; fileRef = F74BAC8426B199AA00A4F12E /* surface_togglers.h */; };
 		F74BAC8726B199B400A4F12E /* surface_togglers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F74BAC8626B199B400A4F12E /* surface_togglers.cpp */; };
+		F74BAC8C26B1DF9600A4F12E /* surface_togglers_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F74BAC8A26B1DF9600A4F12E /* surface_togglers_utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,8 @@
 		F72DF86C26AD5B3700FF96C9 /* asyncdns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asyncdns.h; path = ../library/WDL/WDL/jnetlib/asyncdns.h; sourceTree = "<group>"; };
 		F74BAC8426B199AA00A4F12E /* surface_togglers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = surface_togglers.h; path = ../header/surface_togglers.h; sourceTree = "<group>"; };
 		F74BAC8626B199B400A4F12E /* surface_togglers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = surface_togglers.cpp; path = ../source/surface_togglers.cpp; sourceTree = "<group>"; };
+		F74BAC8826B1DF5300A4F12E /* surface_togglers_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = surface_togglers_utils.h; sourceTree = "<group>"; };
+		F74BAC8A26B1DF9600A4F12E /* surface_togglers_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = surface_togglers_utils.cpp; sourceTree = "<group>"; };
 		F750D7DA26B1750C00AF0A0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				F74BAC8426B199AA00A4F12E /* surface_togglers.h */,
+				F74BAC8A26B1DF9600A4F12E /* surface_togglers_utils.cpp */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -298,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				F74BAC8626B199B400A4F12E /* surface_togglers.cpp */,
+				F74BAC8826B1DF5300A4F12E /* surface_togglers_utils.h */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				C484E68E1C1BAD49005C6CCC /* swell-gdi.mm in Sources */,
 				C43CE9AD1C2CDB5500315BC9 /* mrpexamplewindows.cpp in Sources */,
 				F72DF86426AD58DA00FF96C9 /* httpget.cpp in Sources */,
+				F74BAC8C26B1DF9600A4F12E /* surface_togglers_utils.cpp in Sources */,
 				E3EAC67E1C1C99D800F619AA /* MyFirstClass.cpp in Sources */,
 				C464FFCD1C2E1E9F0023C734 /* mrp_pcm_source.cpp in Sources */,
 				C4A03BFF1C2A2A6A009E1DC3 /* mrpwincontrols.cpp in Sources */,

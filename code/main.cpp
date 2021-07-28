@@ -295,17 +295,13 @@ extern "C"
 #endif
 			
 			/// ------------------------------------------------- PTL changes start -- add some actions
+			surface_togglers::ConfigParser configParser;
+			for (auto& name : configParser.getTogglerNames())
+			{
+				surface_togglers::Toggler::registerActions(name);
+			}
+			surface_togglers::Toggler::registerClearAllTogglersAction();
 			
-			ConfigParser configParser;
-			configParser.getTogglerNames();
-			
-//			add_action(surfaceButtons.zoomButton.getActionName(), surfaceButtons.zoomButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.zoomButton.toggleState(act); });
-//			add_action(surfaceButtons.noMotorsButton.getActionName(), surfaceButtons.noMotorsButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.noMotorsButton.toggleState(act); });
-//			add_action(surfaceButtons.sendsButton.getActionName(), surfaceButtons.sendsButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.sendsButton.toggleState(act); });
-//			add_action(surfaceButtons.flipButton.getActionName(), surfaceButtons.flipButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.flipButton.toggleState(act); });
-//
-//			add_action(surfaceButtons.goHomeButton.getActionName(), surfaceButtons.goHomeButton.getActionId(), CannotToggle, [&](action_entry& act) {surfaceButtons.goHomeButton.apply(act); });
-
 			/// ------------------------------------------------- PTL changes end
 
 
