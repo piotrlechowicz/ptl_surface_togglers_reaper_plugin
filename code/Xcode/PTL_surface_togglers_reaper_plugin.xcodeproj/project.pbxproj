@@ -123,6 +123,7 @@
 		F72DF86C26AD5B3700FF96C9 /* asyncdns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asyncdns.h; path = ../library/WDL/WDL/jnetlib/asyncdns.h; sourceTree = "<group>"; };
 		F72DF87426AD650D00FF96C9 /* PTL_surface_togglers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTL_surface_togglers.h; sourceTree = "<group>"; };
 		F72DF87626AD650D00FF96C9 /* PTL_surface_togglers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PTL_surface_togglers.cpp; sourceTree = "<group>"; };
+		F750D7DA26B1750C00AF0A0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +142,7 @@
 		C479315B1BE9799D00C024D1 = {
 			isa = PBXGroup;
 			children = (
+				F750D7DA26B1750C00AF0A0F /* README.md */,
 				F72DF87226AD650D00FF96C9 /* PTL_code */,
 				C4D434B81C1A41E3005DFFD3 /* Carbon.framework */,
 				C4D434B91C1A41E3005DFFD3 /* Cocoa.framework */,
@@ -454,7 +456,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = ../build/;
+				DSTROOT = ../../releases/;
 				DYLIB_INSTALL_NAME_BASE = /;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -527,7 +529,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = ../build/;
+				DSTROOT = ../../releases/;
 				DYLIB_INSTALL_NAME_BASE = /;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

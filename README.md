@@ -1,4 +1,9 @@
-# PTL_surface_extension Reaper plugin
+# PTL_surface_togglers Reaper plugin
+
+Plugin that creates dummy toggle actions which can be mapped to surface control buttons.
+
+
+### Credits
 
 The plugin is created based on the MyReaperPlugin
 https://github.com/elanhickler/MyReaperPlugin
