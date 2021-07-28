@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E3E1DB0B1C18C67100D648F5"
-               BuildableName = "reaper_PTL_surface_togglers.dylib"
-               BlueprintName = "reaper_PTL_surface_togglers"
-               ReferencedContainer = "container:PTL_surface_togglers_reaper_plugin.xcodeproj">
+               BuildableName = "reaper_surface_togglers.dylib"
+               BlueprintName = "reaper_surface_togglers"
+               ReferencedContainer = "container:surface_togglers_reaper_plugin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,15 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E3E1DB0B1C18C67100D648F5"
-            BuildableName = "reaper_MyReaperPlugin.dylib"
-            BlueprintName = "reaper_MyReaperPlugin"
-            ReferencedContainer = "container:MyReaperPlugin.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -65,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E3E1DB0B1C18C67100D648F5"
-            BuildableName = "reaper_PTL_surface_togglers.dylib"
-            BlueprintName = "reaper_PTL_surface_togglers"
-            ReferencedContainer = "container:PTL_surface_togglers_reaper_plugin.xcodeproj">
+            BuildableName = "reaper_surface_togglers.dylib"
+            BlueprintName = "reaper_surface_togglers"
+            ReferencedContainer = "container:surface_togglers_reaper_plugin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

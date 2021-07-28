@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E3E1DB0B1C18C67100D648F5"
-               BuildableName = "reaper_PTL_surface_togglers.dylib"
-               BlueprintName = "reaper_PTL_surface_togglers"
-               ReferencedContainer = "container:PTL_surface_togglers_reaper_plugin.xcodeproj">
+               BuildableName = "reaper_surface_togglers.dylib"
+               BlueprintName = "reaper_surface_togglers"
+               ReferencedContainer = "container:surface_togglers_reaper_plugin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,15 +50,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E3E1DB0B1C18C67100D648F5"
-            BuildableName = "reaper_PTL_surface_togglers.dylib"
-            BlueprintName = "reaper_PTL_surface_togglers"
-            ReferencedContainer = "container:PTL_surface_togglers_reaper_plugin.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

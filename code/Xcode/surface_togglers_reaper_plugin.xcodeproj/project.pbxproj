@@ -60,8 +60,8 @@
 		F72DF86F26AD5B3700FF96C9 /* httpget.h in Headers */ = {isa = PBXBuildFile; fileRef = F72DF86A26AD5B3700FF96C9 /* httpget.h */; };
 		F72DF87026AD5B3700FF96C9 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = F72DF86B26AD5B3700FF96C9 /* util.h */; };
 		F72DF87126AD5B3700FF96C9 /* asyncdns.h in Headers */ = {isa = PBXBuildFile; fileRef = F72DF86C26AD5B3700FF96C9 /* asyncdns.h */; };
-		F72DF87726AD650D00FF96C9 /* PTL_surface_togglers.h in Headers */ = {isa = PBXBuildFile; fileRef = F72DF87426AD650D00FF96C9 /* PTL_surface_togglers.h */; };
-		F72DF87826AD650D00FF96C9 /* PTL_surface_togglers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F72DF87626AD650D00FF96C9 /* PTL_surface_togglers.cpp */; };
+		F74BAC8526B199AA00A4F12E /* surface_togglers.h in Headers */ = {isa = PBXBuildFile; fileRef = F74BAC8426B199AA00A4F12E /* surface_togglers.h */; };
+		F74BAC8726B199B400A4F12E /* surface_togglers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F74BAC8626B199B400A4F12E /* surface_togglers.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,7 +108,7 @@
 		C4DED3BB1C20EB2B00275B4A /* reaper_action_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = reaper_action_helper.cpp; path = ../source/reaper_action_helper.cpp; sourceTree = "<group>"; };
 		E3248BDB1C17C8AF00308A5F /* main.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = main.hpp; path = ../main.hpp; sourceTree = "<group>"; };
 		E3248BDE1C17C8BA00308A5F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
-		E3E1DB161C18C67100D648F5 /* reaper_PTL_surface_togglers.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = reaper_PTL_surface_togglers.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E1DB161C18C67100D648F5 /* reaper_surface_togglers.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = reaper_surface_togglers.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EAC67D1C1C99D800F619AA /* MyFirstClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyFirstClass.cpp; path = ../source/MyFirstClass.cpp; sourceTree = "<group>"; };
 		E3EAC67F1C1C99E500F619AA /* MyFirstClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MyFirstClass.hpp; path = ../header/MyFirstClass.hpp; sourceTree = "<group>"; };
 		F72DF85E26AD57AE00FF96C9 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../library/WDL/WDL/jnetlib/util.cpp; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 		F72DF86A26AD5B3700FF96C9 /* httpget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = httpget.h; path = ../library/WDL/WDL/jnetlib/httpget.h; sourceTree = "<group>"; };
 		F72DF86B26AD5B3700FF96C9 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../library/WDL/WDL/jnetlib/util.h; sourceTree = "<group>"; };
 		F72DF86C26AD5B3700FF96C9 /* asyncdns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asyncdns.h; path = ../library/WDL/WDL/jnetlib/asyncdns.h; sourceTree = "<group>"; };
-		F72DF87426AD650D00FF96C9 /* PTL_surface_togglers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTL_surface_togglers.h; sourceTree = "<group>"; };
-		F72DF87626AD650D00FF96C9 /* PTL_surface_togglers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PTL_surface_togglers.cpp; sourceTree = "<group>"; };
+		F74BAC8426B199AA00A4F12E /* surface_togglers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = surface_togglers.h; path = ../header/surface_togglers.h; sourceTree = "<group>"; };
+		F74BAC8626B199B400A4F12E /* surface_togglers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = surface_togglers.cpp; path = ../source/surface_togglers.cpp; sourceTree = "<group>"; };
 		F750D7DA26B1750C00AF0A0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,7 +163,7 @@
 		C47931651BE9799D00C024D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E3E1DB161C18C67100D648F5 /* reaper_PTL_surface_togglers.dylib */,
+				E3E1DB161C18C67100D648F5 /* reaper_surface_togglers.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 		F72DF87326AD650D00FF96C9 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				F72DF87426AD650D00FF96C9 /* PTL_surface_togglers.h */,
+				F74BAC8426B199AA00A4F12E /* surface_togglers.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 		F72DF87526AD650D00FF96C9 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				F72DF87626AD650D00FF96C9 /* PTL_surface_togglers.cpp */,
+				F74BAC8626B199B400A4F12E /* surface_togglers.cpp */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -312,6 +312,7 @@
 				C486A0C41C238CFC00FF41C8 /* reascript.hpp in Headers */,
 				C486064D1C1A3C4000186D68 /* resource.h in Headers */,
 				C406994E1C39B33800E445F7 /* reaper_plugin.h in Headers */,
+				F74BAC8526B199AA00A4F12E /* surface_togglers.h in Headers */,
 				C464FFCB1C2E1E910023C734 /* mrp_pcm_source.h in Headers */,
 				C4C79FAD1C2EA84300D83955 /* mrpwincontrols.h in Headers */,
 				C42AC6CF1C274B6A00FAE97E /* reascriptgui.h in Headers */,
@@ -319,7 +320,6 @@
 				E3EAC6801C1C99E500F619AA /* MyFirstClass.hpp in Headers */,
 				C40699501C39B34300E445F7 /* reaper_plugin_functions.h in Headers */,
 				C4C6FAAD1C3F19D100269A5A /* xendynamicsprocessor.h in Headers */,
-				F72DF87726AD650D00FF96C9 /* PTL_surface_togglers.h in Headers */,
 				F72DF87026AD5B3700FF96C9 /* util.h in Headers */,
 				C43CE9AB1C2CDB4B00315BC9 /* mrpexamplewindows.h in Headers */,
 				F72DF87126AD5B3700FF96C9 /* asyncdns.h in Headers */,
@@ -337,9 +337,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E3E1DB0B1C18C67100D648F5 /* reaper_PTL_surface_togglers */ = {
+		E3E1DB0B1C18C67100D648F5 /* reaper_surface_togglers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "reaper_PTL_surface_togglers" */;
+			buildConfigurationList = E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "reaper_surface_togglers" */;
 			buildPhases = (
 				E3E1DB0C1C18C67100D648F5 /* Sources */,
 				E3E1DB0E1C18C67100D648F5 /* Frameworks */,
@@ -349,9 +349,9 @@
 			);
 			dependencies = (
 			);
-			name = reaper_PTL_surface_togglers;
+			name = reaper_surface_togglers;
 			productName = reaper_example_plugin;
-			productReference = E3E1DB161C18C67100D648F5 /* reaper_PTL_surface_togglers.dylib */;
+			productReference = E3E1DB161C18C67100D648F5 /* reaper_surface_togglers.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -363,7 +363,7 @@
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "My Company";
 			};
-			buildConfigurationList = C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "PTL_surface_togglers_reaper_plugin" */;
+			buildConfigurationList = C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "surface_togglers_reaper_plugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -376,7 +376,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E3E1DB0B1C18C67100D648F5 /* reaper_PTL_surface_togglers */,
+				E3E1DB0B1C18C67100D648F5 /* reaper_surface_togglers */,
 			);
 		};
 /* End PBXProject section */
@@ -397,13 +397,13 @@
 				C43CE9AD1C2CDB5500315BC9 /* mrpexamplewindows.cpp in Sources */,
 				F72DF86426AD58DA00FF96C9 /* httpget.cpp in Sources */,
 				E3EAC67E1C1C99D800F619AA /* MyFirstClass.cpp in Sources */,
-				F72DF87826AD650D00FF96C9 /* PTL_surface_togglers.cpp in Sources */,
 				C464FFCD1C2E1E9F0023C734 /* mrp_pcm_source.cpp in Sources */,
 				C4A03BFF1C2A2A6A009E1DC3 /* mrpwincontrols.cpp in Sources */,
 				C484E69A1C1BAE94005C6CCC /* lice_arc.cpp in Sources */,
 				F72DF86626AD58DA00FF96C9 /* listen.cpp in Sources */,
 				F72DF86526AD58DA00FF96C9 /* connection.cpp in Sources */,
 				C4C6FAAB1C3F19C300269A5A /* xendynamicprocessor.cpp in Sources */,
+				F74BAC8726B199B400A4F12E /* surface_togglers.cpp in Sources */,
 				C4A793C31C28F5DE00C60DC9 /* mylicecontrols.cpp in Sources */,
 				F72DF85F26AD57AE00FF96C9 /* util.cpp in Sources */,
 				C4A793C11C28F59900C60DC9 /* lice_control.cpp in Sources */,
@@ -429,7 +429,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -484,9 +484,9 @@
 					$SRCROOT/../,
 					$SRCROOT,
 					$SRCROOT/../library/WDL/WDL/jnetlib,
+					$SRCROOT/../PTL_code/header,
 				);
 				INSTALL_PATH = /;
-				LD_DYLIB_INSTALL_NAME = reaper_PTL_surface_togglers.dylib;
 				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -502,7 +502,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -554,9 +554,9 @@
 					$SRCROOT/../,
 					$SRCROOT,
 					$SRCROOT/../library/WDL/WDL/jnetlib,
+					$SRCROOT/../PTL_code/header,
 				);
 				INSTALL_PATH = /;
-				LD_DYLIB_INSTALL_NAME = reaper_PTL_surface_togglers.dylib;
 				LIBRARY_SEARCH_PATHS = "";
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -602,7 +602,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "PTL_surface_togglers_reaper_plugin" */ = {
+		C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "surface_togglers_reaper_plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C47931761BE9799D00C024D1 /* Debug */,
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "reaper_PTL_surface_togglers" */ = {
+		E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "reaper_surface_togglers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3E1DB141C18C67100D648F5 /* Debug */,

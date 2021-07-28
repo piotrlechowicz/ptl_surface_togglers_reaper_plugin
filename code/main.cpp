@@ -33,7 +33,7 @@ HWND g_parent; // global variable that holds the handle to the Reaper main windo
 #include "reascript.hpp" /*** HERE THE FUNCTIONS DO THEIR WORK ***/
 
 // load surface toggling actions
-#include "PTL_surface_togglers.h" 
+#include "surface_togglers.h" 
 
 void doAction1() {
 	ShowMessageBox("Hello World!", "Reaper extension", 0);
@@ -262,9 +262,9 @@ void test_netlib()
 		//readbg() << pagedata.data();
 	}
 }
-
-// PTL - these buttons needs to be defined globally. Do not know why, but otherwise reaper crushes
-PTLSurfaceButtons surfaceButtons;
+//
+//// PTL - these buttons needs to be defined globally. Do not know why, but otherwise reaper crushes
+//PTLSurfaceButtons surfaceButtons;
 
 extern "C"
 {
@@ -294,15 +294,19 @@ extern "C"
 			SWELL_RegisterCustomControlCreator((SWELL_ControlCreatorProc)rec->GetFunc("Mac_CustomControlCreator"));
 #endif
 			
-			//// ------------------------------------------------- PTL changes start -- add some actions
-			add_action(surfaceButtons.zoomButton.getActionName(), surfaceButtons.zoomButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.zoomButton.toggleState(act); });			
-			add_action(surfaceButtons.noMotorsButton.getActionName(), surfaceButtons.noMotorsButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.noMotorsButton.toggleState(act); });			
-			add_action(surfaceButtons.sendsButton.getActionName(), surfaceButtons.sendsButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.sendsButton.toggleState(act); });
-			add_action(surfaceButtons.flipButton.getActionName(), surfaceButtons.flipButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.flipButton.toggleState(act); });
+			/// ------------------------------------------------- PTL changes start -- add some actions
+			
+			ConfigParser configParser;
+			configParser.getTogglerNames();
+			
+//			add_action(surfaceButtons.zoomButton.getActionName(), surfaceButtons.zoomButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.zoomButton.toggleState(act); });
+//			add_action(surfaceButtons.noMotorsButton.getActionName(), surfaceButtons.noMotorsButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.noMotorsButton.toggleState(act); });
+//			add_action(surfaceButtons.sendsButton.getActionName(), surfaceButtons.sendsButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.sendsButton.toggleState(act); });
+//			add_action(surfaceButtons.flipButton.getActionName(), surfaceButtons.flipButton.getActionId(), ToggleOff, [&](action_entry& act) {surfaceButtons.flipButton.toggleState(act); });
+//
+//			add_action(surfaceButtons.goHomeButton.getActionName(), surfaceButtons.goHomeButton.getActionId(), CannotToggle, [&](action_entry& act) {surfaceButtons.goHomeButton.apply(act); });
 
-			add_action(surfaceButtons.goHomeButton.getActionName(), surfaceButtons.goHomeButton.getActionId(), CannotToggle, [&](action_entry& act) {surfaceButtons.goHomeButton.apply(act); });
-
-			//// ------------------------------------------------- PTL changes end
+			/// ------------------------------------------------- PTL changes end
 
 
 //			// Use C++11 lambda to call the doAction1() function that doesn't have the action_entry& as input parameter
