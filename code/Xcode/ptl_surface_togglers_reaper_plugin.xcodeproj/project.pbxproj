@@ -109,7 +109,7 @@
 		C4DED3BB1C20EB2B00275B4A /* reaper_action_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = reaper_action_helper.cpp; path = ../source/reaper_action_helper.cpp; sourceTree = "<group>"; };
 		E3248BDB1C17C8AF00308A5F /* main.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = main.hpp; path = ../main.hpp; sourceTree = "<group>"; };
 		E3248BDE1C17C8BA00308A5F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
-		E3E1DB161C18C67100D648F5 /* reaper_surface_togglers.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = reaper_surface_togglers.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E1DB161C18C67100D648F5 /* ptl_reaper_surface_togglers.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ptl_reaper_surface_togglers.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EAC67D1C1C99D800F619AA /* MyFirstClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyFirstClass.cpp; path = ../source/MyFirstClass.cpp; sourceTree = "<group>"; };
 		E3EAC67F1C1C99E500F619AA /* MyFirstClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MyFirstClass.hpp; path = ../header/MyFirstClass.hpp; sourceTree = "<group>"; };
 		F72DF85E26AD57AE00FF96C9 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../library/WDL/WDL/jnetlib/util.cpp; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 		F72DF86A26AD5B3700FF96C9 /* httpget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = httpget.h; path = ../library/WDL/WDL/jnetlib/httpget.h; sourceTree = "<group>"; };
 		F72DF86B26AD5B3700FF96C9 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../library/WDL/WDL/jnetlib/util.h; sourceTree = "<group>"; };
 		F72DF86C26AD5B3700FF96C9 /* asyncdns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asyncdns.h; path = ../library/WDL/WDL/jnetlib/asyncdns.h; sourceTree = "<group>"; };
-		F74BAC8426B199AA00A4F12E /* surface_togglers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = surface_togglers.h; path = ../header/surface_togglers.h; sourceTree = "<group>"; };
-		F74BAC8626B199B400A4F12E /* surface_togglers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = surface_togglers.cpp; path = ../source/surface_togglers.cpp; sourceTree = "<group>"; };
+		F74BAC8426B199AA00A4F12E /* surface_togglers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = surface_togglers.h; sourceTree = "<group>"; };
+		F74BAC8626B199B400A4F12E /* surface_togglers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = surface_togglers.cpp; sourceTree = "<group>"; };
 		F74BAC8826B1DF5300A4F12E /* surface_togglers_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = surface_togglers_utils.h; sourceTree = "<group>"; };
 		F74BAC8A26B1DF9600A4F12E /* surface_togglers_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = surface_togglers_utils.cpp; sourceTree = "<group>"; };
 		F750D7DA26B1750C00AF0A0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		C47931651BE9799D00C024D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E3E1DB161C18C67100D648F5 /* reaper_surface_togglers.dylib */,
+				E3E1DB161C18C67100D648F5 /* ptl_reaper_surface_togglers.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 		F72DF87226AD650D00FF96C9 /* PTL_code */ = {
 			isa = PBXGroup;
 			children = (
-				F72DF87326AD650D00FF96C9 /* source */,
 				F72DF87526AD650D00FF96C9 /* header */,
+				F72DF87326AD650D00FF96C9 /* source */,
 			);
 			name = PTL_code;
 			path = ../PTL_code;
@@ -292,7 +292,7 @@
 		F72DF87326AD650D00FF96C9 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				F74BAC8426B199AA00A4F12E /* surface_togglers.h */,
+				F74BAC8626B199B400A4F12E /* surface_togglers.cpp */,
 				F74BAC8A26B1DF9600A4F12E /* surface_togglers_utils.cpp */,
 			);
 			path = source;
@@ -301,7 +301,7 @@
 		F72DF87526AD650D00FF96C9 /* header */ = {
 			isa = PBXGroup;
 			children = (
-				F74BAC8626B199B400A4F12E /* surface_togglers.cpp */,
+				F74BAC8426B199AA00A4F12E /* surface_togglers.h */,
 				F74BAC8826B1DF5300A4F12E /* surface_togglers_utils.h */,
 			);
 			path = header;
@@ -342,9 +342,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E3E1DB0B1C18C67100D648F5 /* reaper_surface_togglers */ = {
+		E3E1DB0B1C18C67100D648F5 /* ptl_reaper_surface_togglers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "reaper_surface_togglers" */;
+			buildConfigurationList = E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "ptl_reaper_surface_togglers" */;
 			buildPhases = (
 				E3E1DB0C1C18C67100D648F5 /* Sources */,
 				E3E1DB0E1C18C67100D648F5 /* Frameworks */,
@@ -354,9 +354,9 @@
 			);
 			dependencies = (
 			);
-			name = reaper_surface_togglers;
+			name = ptl_reaper_surface_togglers;
 			productName = reaper_example_plugin;
-			productReference = E3E1DB161C18C67100D648F5 /* reaper_surface_togglers.dylib */;
+			productReference = E3E1DB161C18C67100D648F5 /* ptl_reaper_surface_togglers.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -368,7 +368,7 @@
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "My Company";
 			};
-			buildConfigurationList = C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "surface_togglers_reaper_plugin" */;
+			buildConfigurationList = C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "ptl_surface_togglers_reaper_plugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -381,7 +381,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E3E1DB0B1C18C67100D648F5 /* reaper_surface_togglers */,
+				E3E1DB0B1C18C67100D648F5 /* ptl_reaper_surface_togglers */,
 			);
 		};
 /* End PBXProject section */
@@ -581,7 +581,7 @@
 				DYLIB_INSTALL_NAME_BASE = /;
 				EXECUTABLE_PREFIX = "";
 				GCC_WARN_UNUSED_FUNCTION = NO;
-				LD_DYLIB_INSTALL_NAME = reaper_PTL_surface_togglers.dylib;
+				LD_DYLIB_INSTALL_NAME = reaper_ptl_surface_togglers.dylib;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,7 +598,7 @@
 				DYLIB_INSTALL_NAME_BASE = /;
 				EXECUTABLE_PREFIX = "";
 				GCC_WARN_UNUSED_FUNCTION = NO;
-				LD_DYLIB_INSTALL_NAME = reaper_PTL_surface_togglers.dylib;
+				LD_DYLIB_INSTALL_NAME = reaper_ptl_surface_togglers.dylib;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -608,7 +608,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "surface_togglers_reaper_plugin" */ = {
+		C479315F1BE9799D00C024D1 /* Build configuration list for PBXProject "ptl_surface_togglers_reaper_plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C47931761BE9799D00C024D1 /* Debug */,
@@ -617,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "reaper_surface_togglers" */ = {
+		E3E1DB131C18C67100D648F5 /* Build configuration list for PBXNativeTarget "ptl_reaper_surface_togglers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3E1DB141C18C67100D648F5 /* Debug */,

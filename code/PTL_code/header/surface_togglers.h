@@ -27,12 +27,13 @@ public:
 void setReaperToggleState(action_entry& act, bool state, std::string reaperStateSection, std::string reaperStateKey);
 
 /**
- * Action parent interface that has reaper's action name and id
+ * Action parent interface that has reaper's action name and id, with default prefixes.
  */
 class Action
 {
 public:
 	Action(std::string name);
+	Action(std::string name, std::string id);
 
 protected:
 	std::string name;
@@ -43,8 +44,9 @@ protected:
 
 /**
  * Simple action which only toggles internal state (wihout actually doing anything).
- * It can be used to light buttons on control surface if no reaper state is associated with it
- * (e.g., when navigating through zones). The action should start with 'surface_toggle_' name and end with '_toggle'
+ * It can be used to lit buttons on control surface if no reaper state is associated with it
+ * (e.g., when navigating through zones).
+ * The action should start with 'surface_toggle_' name and end with '_toggle'.
  */
 class Toggler : public Action
 {
@@ -90,4 +92,5 @@ protected:
 	static std::string nameSuffix;
 	static std::string idSuffix;
 };
+
 }

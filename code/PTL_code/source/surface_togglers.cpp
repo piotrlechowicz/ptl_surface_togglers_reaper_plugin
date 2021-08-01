@@ -37,7 +37,7 @@ std::vector<std::string> ConfigParser::getTogglerNames()
 		}
 		file.close();
 	} else {
-		ShowConsoleMsg("PTL_SurfTog: cannot open config file. Check if \"Reaper resource path/PTL/SurfTog/config.txt\" file is provided.\n");
+		ShowConsoleMsg(("PTL_SurfTog: cannot open config file. Check if \"{Reaper resource path}/" + configPathSuffix.string() + "\" file is provided.\n").c_str());
 	}
 	return togglerNames;
 }
@@ -74,8 +74,13 @@ Action::Action(std::string name)
 {
 	this->id = name;
 	this->name = this->namePrefix + name;
-	std::replace( this->id.begin(), this->id.end(), ' ', '_' );
+	std::replace(this->id.begin(), this->id.end(), ' ', '_');
 	this->id = this->idPrefix + this->id;
+}
+
+Action::Action(std::string name, std::string id) : name(name), id(id)
+{
+	// intentionally left blank
 }
 
 std::vector<Toggler> Toggler::togglers {};
