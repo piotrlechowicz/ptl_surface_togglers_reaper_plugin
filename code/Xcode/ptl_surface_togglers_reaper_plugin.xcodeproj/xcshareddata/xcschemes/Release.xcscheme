@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E3E1DB0B1C18C67100D648F5"
-               BuildableName = "ptl_reaper_surface_togglers.dylib"
-               BlueprintName = "ptl_reaper_surface_togglers"
+               BuildableName = "reaper_ptl_surface_togglers.dylib"
+               BlueprintName = "reaper_ptl_surface_togglers"
                ReferencedContainer = "container:ptl_surface_togglers_reaper_plugin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -54,8 +54,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E3E1DB0B1C18C67100D648F5"
-            BuildableName = "ptl_reaper_surface_togglers.dylib"
-            BlueprintName = "ptl_reaper_surface_togglers"
+            BuildableName = "reaper_ptl_surface_togglers.dylib"
+            BlueprintName = "reaper_ptl_surface_togglers"
             ReferencedContainer = "container:ptl_surface_togglers_reaper_plugin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -67,8 +67,8 @@ void setReaperToggleState(action_entry& act, bool state, std::string reaperState
 	SetExtState(reaperStateSection.c_str(), reaperStateKey.c_str(), buf, true);
 }
 
-std::string Action::namePrefix = "Surface Toggler: ";
-std::string Action::idPrefix = "surface_toggler_";
+std::string Action::namePrefix = "PTL Surface Toggler: ";
+std::string Action::idPrefix = "ptl_surface_toggler_";
 
 Action::Action(std::string name)
 {

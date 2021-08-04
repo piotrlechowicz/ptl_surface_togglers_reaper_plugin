@@ -262,9 +262,6 @@ void test_netlib()
 		//readbg() << pagedata.data();
 	}
 }
-//
-//// PTL - these buttons needs to be defined globally. Do not know why, but otherwise reaper crushes
-//PTLSurfaceButtons surfaceButtons;
 
 extern "C"
 {
@@ -304,138 +301,6 @@ extern "C"
 			
 			/// ------------------------------------------------- PTL changes end
 
-
-//			// Use C++11 lambda to call the doAction1() function that doesn't have the action_entry& as input parameter
-//			add_action("Simple extension test action", "EXAMPLE_ACTION_01", CannotToggle, [](action_entry&) { doAction1(); });
-//
-			// Pass in the doAction2() function directly since it's compatible with the action adding function signature
-			auto togact = add_action("Simple extension togglable test action", "EXAMPLE_ACTION_02", ToggleOff, doAction2);
-//
-//			// Use C++11 lambda to directly define the action code right here
-//			add_action("Simple extension another test action", "EXAMPLE_ACTION_03", CannotToggle,
-//				[](action_entry&) { ShowMessageBox("Hello from C++11 lambda!", "Reaper extension API test", 0); });
-//
-//			// Add 4 actions in a loop, using C++11 lambda capture [i] to make a small customization for each action
-//			for (int i = 0; i < 4; ++i) {
-//				auto actionfunction = [i](action_entry&) {
-//					std::string message = "You called action " + std::to_string(i + 1);
-//					ShowMessageBox(message.c_str(), "Reaper extension API test", 0);
-//				};
-//				std::string desc = "Simple extension loop created action " + std::to_string(i + 1);
-//				std::string id = "EXAMPLE_ACTION_FROM_LOOP" + std::to_string(i);
-//				add_action(desc, id, CannotToggle, actionfunction);
-//			}
-//
-//			// Add actions to show WinControl containing windows
-//			add_action("MRP : Toggle simple example window", "MRP_SHOW_WINCONTROLSIMPLETEST", ToggleOff, [](action_entry&)
-//			{
-//				toggle_simple_example_window(g_parent);
-//			});
-//
-//			add_action("MRP : Toggle slider bank window", "MRP_SHOW_WINCONTROLSLIDERBANK", ToggleOff, [](action_entry&)
-//			{
-//				toggle_sliderbank_window(g_parent);
-//			});
-//
-//			add_action("MRP : Add WinControls test window", "MRP_SHOW_WINCONTROLSTEST", ToggleOff, [](action_entry&)
-//			{
-//				open_win_controls_window(g_parent);
-//			});
-//
-//			add_action("MRP/Xenakios : Audio Dynamics Processor", "MRP_SHOW_XENDYNAMICSPROC", ToggleOff, [](action_entry&)
-//			{
-//				show_dynamics_processor_window(g_parent);
-//			});
-//
-//			add_action("MRP/Xenakios : Test MRPAudioAccessor", "MRP_XEN_TESTMRPAUDIOACC", ToggleOff, [](action_entry&)
-//			{
-//				mrp::experimental::test_mrp_audio_accessor();
-//			});
-//
-//			add_action("MRP/Xenakios : Test netlib", "MRP_XEN_TESTNETLIB", ToggleOff, [](action_entry&)
-//			{
-//				test_netlib();
-//			});
-//			
-////#ifdef MODALWINDOWSWORKPROPERLY
-//			add_action("MRP : Show modal dialog...", "MRP_SHOW_WINMODAL", ToggleOff, [](action_entry&)
-//			{
-//				show_modal_dialog(g_parent);
-//			});
-////#endif
-//			add_action("MRP : Test mousewheel/MIDI CC action", "MRP_TESTWHEELMIDICC", ToggleOff, doChangeItemPitchesAction);
-//
-//			add_action("MRP : Play/stop audio source", "MRP_TESTPCM_SOURCE", ToggleOff, [](action_entry&)
-//			{
-//				test_pcm_source(0);
-//			});
-//
-//			add_action("MRP : Test track range class", "MRP_TESTTRACKRANGE", CannotToggle, [](action_entry&)
-//			{
-//				test_track_range();
-//			});
-//
-//			add_action("MRP : Render selected items with IReaperPitchShift (single threaded)", 
-//				"MRP_TESTRENDER_IRP_SINGLETHREADED", CannotToggle, [](action_entry&)
-//			{
-//				test_irp_render(false);
-//			});
-//
-//			add_action("MRP : Render selected items with IReaperPitchShift (multi threaded)",
-//				"MRP_TESTRENDER_IRP_MULTITHREADED", CannotToggle, [](action_entry&)
-//			{
-//				test_irp_render(true);
-//			});
-//
-//				// Add functions
-//#define func(f) add_function(f, #f)
-//			func(MRP_DoublePointer);
-//			func(MRP_IntPointer);
-//			func(MRP_CalculateEnvelopeHash);
-//			func(MRP_DoublePointerAsInt);
-//			func(MRP_CastDoubleToInt);
-//			func(MRP_ReturnMediaItem);
-//			func(MRP_DoNothing);
-//
-//			func(MRP_CreateWindow);
-//			func(MRP_DestroyWindow);
-//			func(MRP_WindowIsClosed);
-//			func(MRP_WindowSetTitle);
-//			func(MRP_WindowAddControl);
-//			func(MRP_SetControlBounds);
-//			func(MRP_WindowIsDirtyControl);
-//			func(MRP_WindowClearDirtyControls);
-//			func(MRP_GetControlFloatNumber);
-//			func(MRP_SetControlFloatNumber);
-//			func(MRP_GetControlIntNumber);
-//			func(MRP_SetControlIntNumber);
-//			func(MRP_SetControlString);
-//			func(MRP_SendCommandString);
-//			func(MRP_GetWindowDirty);
-//			func(MRP_SetWindowDirty);
-//			func(MRP_GetWindowPosSizeValue);
-//#ifdef REASCRIPTGUIWORKS
-//			func(MRP_GetControlText);
-//			func(MRP_SetControlText);
-//			func(MRP_WindowAddSlider);
-//			func(MRP_WindowAddButton);
-//			func(MRP_WindowAddLineEdit);
-//			func(MRP_WindowAddLabel);
-//			func(MRP_WindowAddLiceControl);
-//			
-//#endif
-//			func(MRP_CreateArray);
-//			func(MRP_DestroyArray);
-//			func(MRP_GenerateSine);
-//			func(MRP_WriteArrayToFile);
-//			func(MRP_MultiplyArrays);
-//			func(MRP_SetArrayValue);
-//			func(MRP_GetArrayValue);
-//#ifdef WIN32
-//			func(MRP_MultiplyArraysMT);
-//#endif
-//#undef func
-
 			if (!rec->Register("hookcommand2", (void*)hookCommandProcEx)) { 
 				MessageBox(g_parent, "Could not register hookcommand2", "MRP extension error", MB_OK);
 			}
@@ -443,18 +308,7 @@ extern "C"
 				MessageBox(g_parent, "Could not register toggleaction", "MRP extension error", MB_OK);
 			}
 			if (!RegisterExportedFuncs(rec)) { /*todo: error*/ }
-
-			// restore extension global settings
-			// saving extension data into reaper project files is another thing and 
-			// at the moment not done in this example plugin
-			if (togact->m_command_id != 0) {
-				const char* numberString = GetExtState("simple_extension", "toggleaction_state");
-				if (numberString != nullptr) {
-					int initogstate = atoi(numberString);
-					if (initogstate == 1)
-						togact->m_togglestate = ToggleOn;
-				}
-			}		
+		
 			start_or_stop_main_thread_executor(false);
 			return 1; // our plugin registered, return success
 		}
