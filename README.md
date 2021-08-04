@@ -4,6 +4,11 @@ Plugin that creates dummy toggle actions with user specified names that can be m
 
 Developed for REAPER v6.32-beta version.
 
+## Installation
+
+Copy `releases/ptl_surface_togglers_reaper_plugin.dylib` to `UserPlugins` in Reaper resource path.
+Copy `PTL/` folder to Reaper resource path.
+
 ## Description
 
 Buttons are lit based on the state of the action (on/off) in Reaper to which they are assigned. However, if button is assigned to action without state/it is used to change CSI zone, its light does not reflect that. To reflect changes in surface, dummy toggles can be used provided by this plugin.

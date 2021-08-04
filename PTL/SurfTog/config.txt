@@ -2,10 +2,9 @@ home
 pan
 zoom
 sends
+receives
 inserts
 automation
-fx_send
-flip
+map
 project
 mixer
-motors
