@@ -9,6 +9,8 @@
 
 #ifdef _WIN32
 
+#define strdup _strdup;
+
 #if !defined(WDL_NO_SUPPORT_UTF8)
 
 #ifdef __cplusplus

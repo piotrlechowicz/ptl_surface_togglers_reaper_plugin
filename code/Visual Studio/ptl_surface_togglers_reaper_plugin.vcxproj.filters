@@ -68,7 +68,12 @@
     <ClCompile Include="..\library\WDL\WDL\jnetlib\httpget.cpp">
       <Filter>library\WDL\jnetlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\PTL_surface_togglers.cpp" />
+    <ClCompile Include="..\PTL_code\source\surface_togglers.cpp">
+      <Filter>PTL_code\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PTL_code\source\surface_togglers_utils.cpp">
+      <Filter>PTL_code\source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\main.hpp" />
@@ -122,7 +127,12 @@
     <ClInclude Include="..\header\mrp_audioaccessor.h">
       <Filter>header</Filter>
     </ClInclude>
-    <ClInclude Include="..\PTL_surface_togglers.h" />
+    <ClInclude Include="..\PTL_code\header\surface_togglers.h">
+      <Filter>PTL_code\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PTL_code\header\surface_togglers_utils.h">
+      <Filter>PTL_code\header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="library">
@@ -148,6 +158,15 @@
     </Filter>
     <Filter Include="library\WDL\jnetlib">
       <UniqueIdentifier>{2d90b9b0-c546-4115-a7e7-5a40725b0a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PTL_code">
+      <UniqueIdentifier>{b2b21a64-f1ec-4e55-b4dc-fb8ab75e0306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PTL_code\source">
+      <UniqueIdentifier>{494d17c1-426f-4d00-97dc-830032dd7137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PTL_code\header">
+      <UniqueIdentifier>{cc94d68f-a125-4f5d-9811-a25c986fb866}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

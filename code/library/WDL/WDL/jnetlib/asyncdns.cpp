@@ -15,6 +15,11 @@
 #endif
 #include "../wdlcstring.h"
 
+#ifdef _WIN32
+#define strnicmp _strnicmp;
+#define stricmp _stricmp;
+#endif
+
 JNL_AsyncDNS::JNL_AsyncDNS(int max_cache_entries)
 {
   m_thread_kill=1;

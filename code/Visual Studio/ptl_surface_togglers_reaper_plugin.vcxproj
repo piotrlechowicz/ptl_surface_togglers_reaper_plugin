@@ -30,7 +30,8 @@
     <ClCompile Include="..\library\WDL\WDL\lice\lice_textnew.cpp" />
     <ClCompile Include="..\library\WDL\WDL\win32_utf8.c" />
     <ClCompile Include="..\main.cpp" />
-    <ClCompile Include="..\PTL_surface_togglers.cpp" />
+    <ClCompile Include="..\PTL_code\source\surface_togglers.cpp" />
+    <ClCompile Include="..\PTL_code\source\surface_togglers_utils.cpp" />
     <ClCompile Include="..\source\lice_control.cpp" />
     <ClCompile Include="..\source\mrpexamplewindows.cpp" />
     <ClCompile Include="..\source\mrpwincontrols.cpp" />
@@ -62,7 +63,8 @@
     <ClInclude Include="..\library\reaper_plugin\reaper_plugin.h" />
     <ClInclude Include="..\library\reaper_plugin\reaper_plugin_functions.h" />
     <ClInclude Include="..\main.hpp" />
-    <ClInclude Include="..\PTL_surface_togglers.h" />
+    <ClInclude Include="..\PTL_code\header\surface_togglers.h" />
+    <ClInclude Include="..\PTL_code\header\surface_togglers_utils.h" />
     <ClInclude Include="..\reascript.hpp" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
@@ -70,7 +72,7 @@
     <ProjectGuid>{FA4191B4-03BF-4BC9-BF85-87777089B66D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ReaperSamplerExtension</RootNamespace>
-    <ProjectName>PTL_surface_extension_reaper_plugin</ProjectName>
+    <ProjectName>PTL_surface_togglers_reaper_plugin</ProjectName>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -131,13 +133,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(VisualStudioDir)\Projects\$(SolutionName)\$(MSBuildProjectDefaultTargets)\$(PlatformTarget) $(Configuration)\</OutDir>
-    <TargetName>reaper_PTL_iQconG2_x$(PlatformArchitecture)</TargetName>
+    <TargetName>reaper_plt_surface_togglers_x$(PlatformArchitecture)</TargetName>
     <IntDir>$(OutDir)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\binary\$(MSBuildProjectDefaultTargets)\$(PlatformTarget) $(Configuration)\</OutDir>
-    <TargetName>reaper_PTL_surface_extension_x$(PlatformArchitecture)</TargetName>
+    <TargetName>reaper_ptl_surface_togglers_x$(PlatformArchitecture)</TargetName>
     <IntDir>$(OutDir)</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -148,13 +150,14 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;NOMINMAX;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;REAPERAPI_NO_LICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\source;..\header;..\library;$(BOOST_ROOT)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\library;..\header;..\PTL_code\header</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <StringPooling>true</StringPooling>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -175,7 +178,6 @@ xcopy /y "$(OutDir)$(TargetFileName)" "$(REAPER_DIR)\UserPlugins\"</Command>
       <Optimization>Full</Optimization>
       <PreprocessorDefinitions>WIN32;NOMINMAX;_NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;REAPERAPI_NO_LICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\source;..\header;..\library;$(BOOST_ROOT)</AdditionalIncludeDirectories>
       <DebugInformationFormat>None</DebugInformationFormat>
       <StringPooling>true</StringPooling>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -185,6 +187,8 @@ xcopy /y "$(OutDir)$(TargetFileName)" "$(REAPER_DIR)\UserPlugins\"</Command>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
       <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>..\library;..\header;..\PTL_code\header</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -205,7 +209,7 @@ xcopy /y "$(OutDir)$(TargetFileName)" "$(REAPER_DIR)\UserPlugins\"</Command>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;NOMINMAX;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;REAPERAPI_NO_LICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>..\source;..\header;..\library;$(BOOST_ROOT)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\library;..\header;..\PTL_code\header</AdditionalIncludeDirectories>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
@@ -216,6 +220,7 @@ xcopy /y "$(OutDir)$(TargetFileName)" "$(REAPER_DIR)\UserPlugins\"</Command>
       <TreatWarningAsError>false</TreatWarningAsError>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -244,7 +249,6 @@ xcopy /y "$(OutDir)$(TargetFileName)" "$(REAPER64_DIR)\Plugins\"</Command>
       <Optimization>Full</Optimization>
       <PreprocessorDefinitions>WIN32;NOMINMAX;_NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;REAPERAPI_NO_LICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\source;..\header;..\library;</AdditionalIncludeDirectories>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
@@ -256,6 +260,8 @@ xcopy /y "$(OutDir)$(TargetFileName)" "$(REAPER64_DIR)\Plugins\"</Command>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>true</StringPooling>
       <FunctionLevelLinking>true</FunctionLevelLinking>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>..\library;..\header;..\PTL_code\header</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

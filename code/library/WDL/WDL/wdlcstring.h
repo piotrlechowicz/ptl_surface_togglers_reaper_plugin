@@ -41,6 +41,10 @@ C string manipulation utilities -- [v]snprintf for Win32, also snprintf_append, 
   #define _WDL_CSTRING_PREFIX static WDL_STATICFUNC_UNUSED
 #endif
 
+#ifdef _WIN32
+#define strnicmp _strnicmp;
+#define stricmp _stricmp;
+#endif
 
 
 #if defined(_WIN32) && defined(_MSC_VER)

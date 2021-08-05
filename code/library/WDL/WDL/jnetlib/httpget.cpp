@@ -11,6 +11,10 @@
 #include "util.h"
 #include "httpget.h"
 
+#ifdef _WIN32
+#define strnicmp _strnicmp;
+#define stricmp _stricmp;
+#endif
 
 JNL_HTTPGet::JNL_HTTPGet(JNL_IAsyncDNS *dns, int recvbufsize, char *proxy)
 {
